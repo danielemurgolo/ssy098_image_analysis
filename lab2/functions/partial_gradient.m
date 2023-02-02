@@ -2,7 +2,7 @@ function  [wgrad, w0grad] = partial_gradient(w, w0, example_train, label_train)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
-y = example_train*w + w0;
+y = dot(example_train,w) + w0;
 
 p = exp(y)/(1+exp(y));
 
