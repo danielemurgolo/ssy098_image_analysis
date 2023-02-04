@@ -9,7 +9,7 @@ p = exp(y)/(1+exp(y));
 if label_train == 1
 
     wgrad = (p-1) * example_train;
-    w0grad = p-1;
+    w0grad = (p-1);
 
 else
 
@@ -18,4 +18,27 @@ else
 
 end
 
+% p = forward(example_train, w, w0);
+% 
+% if label_train == 1
+% 
+%     wgrad =(p-1) * example_train;
+%     w0grad = p-1;
+% 
+% else
+% 
+%     wgrad = p * example_train;
+%     w0grad = p;
+% 
+% 
+% end
+
 end
+
+% function p = forward(I, w, w0)
+% 
+%     y = dot(I,w) + w0;
+% 
+%     p = exp(y)/(1+exp(y));
+% 
+% end
