@@ -1,6 +1,5 @@
 function res = residual_lgths(A, t, pts, pts_tilde)
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+%The function computes the squared length of the 2D residuals
 pts_trans = A*pts + t;
 
 M = pts_trans-pts_tilde;
