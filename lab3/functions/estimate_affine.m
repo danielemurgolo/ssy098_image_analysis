@@ -1,10 +1,14 @@
 function [A, t] = estimate_affine(pts, pts_tilde)
-%UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+%The function estimates the affine trasformation given
+%some points and the respective transformed points
 N = size(pts,2);
 
+%since we have that [x_tilde;y_tilde] = A*[x;y] + t we can write
+%[x_tilde;y_tilde] = [a,b;c,d]*[x,y] + [t_x;t_y] which can be rewritten as
+%[x_tilde;y_tilde] = [x,y,0,0,1,0; 0,0,x,y,0,1]*[a;b;c;d;t_x;t_y]
+%we just have to stack all the points veritcally so the M matrix has size
+%(2*N,6)
 M = zeros(2*N,6);
-
 for j=1:N
 
     M(2*j-1,1:2) = pts(:,j);
