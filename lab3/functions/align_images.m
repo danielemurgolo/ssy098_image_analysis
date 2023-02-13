@@ -10,9 +10,9 @@ trg_points = detectSIFTFeatures(target);
 
 corrs = matchFeatures(src_features, trg_features, 'MaxRatio', 0.8, 'MatchThreshold', 100);
 
-src_points = src_points(:, corrs(:,1));
+src_points = src_validPoints.Location(corrs(:,1),:)';
 
-trg_points = trg_points(:, corrs(:,2));
+trg_points = trg_validPoints.Location(corrs(:,2),:)';
 
 [A,t] = ransac_fit_affine(src_points, trg_points, thresh);
 
