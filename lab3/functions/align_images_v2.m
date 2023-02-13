@@ -3,9 +3,11 @@ function warped = align_images_v2(source, target, threshold, upright)
 %   Detailed explanation goes here
 
 src_points = detectSIFTFeatures(source);
+% src_points = detectSURFFeatures(source);
 [src_features, src_validPoints] = extractFeatures(source,src_points,'Upright', upright);
 
 trg_points = detectSIFTFeatures(target);
+% trg_points = detectSURFFeatures(target);
 [trg_features, trg_validPoints] = extractFeatures(target,trg_points,'Upright', upright);
 
 corrs = matchFeatures(src_features, trg_features, 'MaxRatio', 0.8, 'MatchThreshold', 100);
