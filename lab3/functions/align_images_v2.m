@@ -1,7 +1,6 @@
 function warped = align_images_v2(source, target, threshold, upright)
 %UNTITLED3 Summary of this function goes here
 %   Detailed explanation goes here
-
 src_points = detectSIFTFeatures(source);
 % src_points = detectSURFFeatures(source);
 [src_features, src_validPoints] = extractFeatures(source,src_points,'Upright', upright);
