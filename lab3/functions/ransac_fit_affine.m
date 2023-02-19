@@ -4,9 +4,9 @@ function [A,t] = ransac_fit_affine(pts, pts_tilde, threshold)
 A = zeros(2,2);
 t = zeros(2,1);
 
-n_samples = 20;
+n_samples = 3;
 N = size(pts,2);
-p = 0.995;
+p = 0.99;
 hard_max = 1e5;
 max_iter = hard_max;
 i = 0;
