@@ -7,7 +7,7 @@ function jacobian = compute_jacobian(Ps, U)
 
     U = [U;1];
 
-    for i=1:2:N_cameras
+    for i=1:2:2*N_cameras
 
         P = Ps{round(i/2)};
         a = P(1,:);
