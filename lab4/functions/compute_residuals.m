@@ -1,4 +1,4 @@
-function all_residuals = compute_residuals(Ps, us, U);
+function all_residuals = compute_residuals(Ps, us, U)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
     N_cameras = length(Ps);
