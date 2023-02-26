@@ -8,7 +8,7 @@ function U = refine_triangulation(Ps, us, Uhat)
 
         r = compute_residuals(Ps,us,Uhat);
         J = compute_jacobian(Ps,Uhat);
-        Uhat = Uhat - ((J'*J)\J)*r;
+        Uhat = Uhat - ((J'*J)\J')*r;
 
     end
 
