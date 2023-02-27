@@ -17,5 +17,11 @@ trg_points = trg_validPoints.Location(corrs(:,2),:)';
 
 [A,t] = ransac_fit_affine(src_points, trg_points, threshold);
 
+res = residual_lgths(A,t,src_points,trg_points);
+
+idx = find(res>0.0001);
+
+[A,t] = least_squares_affine(src_points(:,idx), trg_points(:,idx));
+
 warped = affine_warp(size(target), source, A, t);
 end
