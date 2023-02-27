@@ -19,9 +19,21 @@ trg_points = trg_validPoints.Location(corrs(:,2),:)';
 
 res = residual_lgths(A,t,src_points,trg_points);
 
-idx = find(res>0.0001);
+idx = res<threshold;
+
+disp('All points')
+
+disp(num2str(sum(res)))
 
 [A,t] = least_squares_affine(src_points(:,idx), trg_points(:,idx));
+
+res = residual_lgths(A,t,src_points(:,idx),trg_points(:,idx));
+
+disp('Only inliers')
+
+disp(num2str(sum(res)))
+
+
 
 warped = affine_warp(size(target), source, A, t);
 end
