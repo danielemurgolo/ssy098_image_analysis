@@ -1,6 +1,6 @@
 function [U, nbr_inliers] = ransac_triangulation(Ps, us, threshold)
-%UNTITLED4 Summary of this function goes here
-%   Detailed explanation goes here
+%The function takes N_cameras camera matrices Ps, image points us,
+% and a threshold to determine an outlier.
 N_cameras = length(Ps);
 U = zeros(3,N_cameras);
 prob = 0.995;

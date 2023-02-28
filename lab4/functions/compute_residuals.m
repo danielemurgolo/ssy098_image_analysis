@@ -1,6 +1,7 @@
 function all_residuals = compute_residuals(Ps, us, U)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% The function takes a cell list Ps with N cameras, a 2 x N array us of
+% image points and a 3 x 1 array U, and computes a 2N x 1 array with all
+% the reprojection residuals stacked into a single vector/array
     N_cameras = length(Ps);
     Us = [U;1];
     all_residuals = zeros(2*N_cameras,1);

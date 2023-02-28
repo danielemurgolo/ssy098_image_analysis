@@ -1,6 +1,8 @@
 function positive = check_depths(Ps, U)
-%UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+% The function takes n_camera matrices, Ps, and a 3D point, U,
+% and checks the depth of U in each of the cameras. The output is
+% an array of boolean values of length n_camera that indicates which depths
+% were positive
     n_cameras = length(Ps);
     positive = [];
     for i=1:n_cameras

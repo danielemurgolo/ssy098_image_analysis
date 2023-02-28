@@ -1,6 +1,7 @@
 function value = sample_image_at(img, position) 
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% The function takes an RGB image and a 2x1 vector position and returns
+% the corresponding RGB value to the position. If the coordinates are
+% outside the image the function returns color black
 y = round(position(1));
 x = round(position(2));
 h = size(img,1);

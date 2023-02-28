@@ -1,6 +1,6 @@
 function jacobian = compute_jacobian(Ps, U)
-%UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+% The function computes the Jacobian given a 3 x 1- vector U and a cell
+% array of camera matrices Ps
     N_cameras = length(Ps);
     
     jacobian = zeros(2*N_cameras, 3);

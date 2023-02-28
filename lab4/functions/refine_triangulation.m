@@ -1,6 +1,6 @@
 function U = refine_triangulation(Ps, us, Uhat)
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+%The function uses an approximate 3D point Uhat as a starting point
+% for Gauss-Newton’s method
 
     n_iter = 5;
     

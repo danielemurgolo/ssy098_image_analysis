@@ -1,6 +1,6 @@
 function U = minimal_triangulation(Ps, us)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%the function takes two camera matrices, Ps, and two image points, 
+% us, and triangulates a 3D point
     x1 = us(1, 1);
     y1 = us(2, 1);
     x2 = us(1, 2);
