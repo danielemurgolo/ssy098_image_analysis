@@ -23,6 +23,7 @@
 %
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
+
     n_cameras = length(Ps);
     positive = [];
     for i=1:n_cameras

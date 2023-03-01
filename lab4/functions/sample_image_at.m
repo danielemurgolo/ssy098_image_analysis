@@ -25,6 +25,7 @@ function value = sample_image_at(img, position)
 %
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
+
 y = round(position(1));
 x = round(position(2));
 h = size(img,1);
