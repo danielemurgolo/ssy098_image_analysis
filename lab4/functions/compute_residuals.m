@@ -23,32 +23,32 @@ function all_residuals = compute_residuals(Ps, us, U)
 %
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
-    N_cameras = length(Ps);
-    Us = [U;1];
-    all_residuals = zeros(2*N_cameras,1);
-    
-    for i=1:2:2*N_cameras
-  
-        P = Ps{round(i/2)};
-        a = P(1,:);
-        b = P(2,:);
-        c = P(3,:);
-        positive = check_depths(Ps, U);
+N_cameras = length(Ps);
+Us = [U; 1];
+all_residuals = zeros(2*N_cameras, 1);
 
-        if positive
+for i = 1:2:2 * N_cameras
 
-            x = (a*Us)/(c*Us) - us(1,round(i/2));
-            y = (b*Us)/(c*Us) - us(2,round(i/2));
-            all_residuals(i) = x;
-            all_residuals(i+1) = y;
-            
-        else
+    P = Ps{round(i/2)};
+    a = P(1, :);
+    b = P(2, :);
+    c = P(3, :);
+    positive = check_depths(Ps, U);
 
-            all_residuals(i) = inf;
-            all_residuals(i+1) = inf;
+    if positive
 
-        end
+        x = (a * Us) / (c * Us) - us(1, round(i/2));
+        y = (b * Us) / (c * Us) - us(2, round(i/2));
+        all_residuals(i) = x;
+        all_residuals(i+1) = y;
+
+    else
+
+        all_residuals(i) = inf;
+        all_residuals(i+1) = inf;
 
     end
+
+end
 
 end

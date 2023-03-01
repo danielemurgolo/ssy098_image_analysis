@@ -27,16 +27,16 @@ function U = refine_triangulation(Ps, us, Uhat)
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
 
-    n_iter = 5;
-    
-    for i=1:n_iter
+n_iter = 5;
 
-        r = compute_residuals(Ps,us,Uhat);
-        J = compute_jacobian(Ps,Uhat);
-        Uhat = Uhat - ((J'*J)\J')*r;
+for i = 1:n_iter
 
-    end
+    r = compute_residuals(Ps, us, Uhat);
+    J = compute_jacobian(Ps, Uhat);
+    Uhat = Uhat - ((J' * J) \ J') * r;
 
-    U = Uhat;
+end
+
+U = Uhat;
 
 end

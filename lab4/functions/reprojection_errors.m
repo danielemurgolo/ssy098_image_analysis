@@ -1,10 +1,10 @@
 function errors = reprojection_errors(Ps, us, U)
 % Function Name: check_depths
 %
-% Description: This function first checks if each 3D point has positive 
+% Description: This function first checks if each 3D point has positive
 %              depth (i.e., is in front of all the cameras), and sets the
 %              reprojection error to infinity if not. For points with positive
-%              depth, the function computes the reprojection error as the 
+%              depth, the function computes the reprojection error as the
 %              Euclidean distance between the 2D projection of the 3D point
 %              and the corresponding image point. The output is a vector of
 %              reprojection errors, with one entry for each camera.
@@ -28,22 +28,22 @@ function errors = reprojection_errors(Ps, us, U)
 %
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
-    N_cameras = length(Ps);
-    positive = check_depths(Ps, U);
-    errors = zeros(N_cameras,1);
-    
-    for i=1:N_cameras
-    
-        if positive(i)
+N_cameras = length(Ps);
+positive = check_depths(Ps, U);
+errors = zeros(N_cameras, 1);
 
-            u = Ps{i}*[U;1];
-            u = u(1:2)/u(3);
-            errors(i) = sqrt(sum(us(:,i)-u).^2);
+for i = 1:N_cameras
 
-        else
-            errors(i) = inf;
+    if positive(i)
 
-        end
-    
+        u = Ps{i} * [U; 1];
+        u = u(1:2) / u(3);
+        errors(i) = sqrt(sum(us(:, i)-u).^2);
+
+    else
+        errors(i) = inf;
+
     end
+
+end
 end

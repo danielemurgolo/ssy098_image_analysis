@@ -1,4 +1,4 @@
-    function positive = check_depths(Ps, U)
+function positive = check_depths(Ps, U)
 % Function Name: check_depths
 %
 % Description: This function takes a set of camera projection matrices and
@@ -24,20 +24,20 @@
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
 
-    n_cameras = length(Ps);
-    positive = [];
-    for i=1:n_cameras
-    
-    
-            x = Ps{i}*[U;1];
-    
-            if x(3) < 0
-                positive = [positive, false];
-    
-            else
-                positive = [positive, true];
-    
-            end
+n_cameras = length(Ps);
+positive = [];
+for i = 1:n_cameras
+
+
+    x = Ps{i} * [U; 1];
+
+    if x(3) < 0
+        positive = [positive, false];
+
+    else
+        positive = [positive, true];
+
     end
+end
 
 end
