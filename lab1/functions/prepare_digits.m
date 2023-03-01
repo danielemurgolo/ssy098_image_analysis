@@ -9,7 +9,7 @@ radius = 6;
 
 N = length(digits_training);
 
-for i=1:N
+for i = 1:N
 
     image = digits_training(i).image;
     digits_training(i).descriptor = gradient_descriptor(image, center, radius);

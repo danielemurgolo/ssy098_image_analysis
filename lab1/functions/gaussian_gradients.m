@@ -1,10 +1,10 @@
-function [grad_x,grad_y] = gaussian_gradients(image,std)
+function [grad_x, grad_y] = gaussian_gradients(image, std)
 % Function Name: gaussian_gradients
 %
 % Description: This function estimates both the Gaussian derivatives for
-%              each pixel in a grayscale image. The function uses filtering 
-%              with derivative filters and the 'gaussian_filter' function. 
-%              The output is two matrices of the same size as the input 
+%              each pixel in a grayscale image. The function uses filtering
+%              with derivative filters and the 'gaussian_filter' function.
+%              The output is two matrices of the same size as the input
 %              image, representing the estimated Gaussian gradients in the
 %              x and y directions.
 %
@@ -31,4 +31,3 @@ filtered = gaussian_filter(image, std);
 grad_x = imfilter(filtered, [-0.5, 0, 0.5], 'conv');
 grad_y = imfilter(filtered, [-0.5; 0; 0.5], 'conv');
 end
-

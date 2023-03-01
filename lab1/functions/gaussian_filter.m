@@ -1,12 +1,12 @@
-function filtered = gaussian_filter(image,std)
+function filtered = gaussian_filter(image, std)
 % Function Name: gaussian_filter
 %
 % Description: This function applies a Gaussian filter to a grayscale image
 %              with a specified standard deviation. The output is the
-%              filtered image. The filter size is at least four standard 
-%              deviations to maintain precision. The function uses the 
-%              'fspecial' function to construct a Gaussian filter and the 
-%              'imfilter' function to apply the filter with the 'symmetric' 
+%              filtered image. The filter size is at least four standard
+%              deviations to maintain precision. The function uses the
+%              'fspecial' function to construct a Gaussian filter and the
+%              'imfilter' function to apply the filter with the 'symmetric'
 %              option.
 %
 % Inputs:
@@ -30,4 +30,3 @@ filter = fspecial('gaussian', ceil(4*std), std);
 
 filtered = imfilter(image, filter, 'symmetric');
 end
-

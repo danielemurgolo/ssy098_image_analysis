@@ -1,8 +1,8 @@
 function label = classify_digit(digit_img, position, radius, digits_training)
 % Function Name: classify_digit
 %
-% Description: This function computes a descriptor for the given digit image, 
-%              goes through all the digits in digits_training to find the one 
+% Description: This function computes a descriptor for the given digit image,
+%              goes through all the digits in digits_training to find the one
 %              with the most similar descriptor and outputs the label of that digit.
 %
 % Inputs:
@@ -23,7 +23,7 @@ function label = classify_digit(digit_img, position, radius, digits_training)
 % Author: Daniele Murgolo
 % Date: March 1st, 2023
 %
-% See also: gradient_descriptor, place_regions, gaussian_gradients, 
+% See also: gradient_descriptor, place_regions, gaussian_gradients,
 %           gradient_histogram, get_patch
 
 
@@ -35,10 +35,10 @@ best_dist = inf;
 
 N = length(digits_training);
 
-for i=1:N
+for i = 1:N
 
-    dist = norm(desc - digits_training(i).descriptor);
-    if dist<best_dist
+    dist = norm(desc-digits_training(i).descriptor);
+    if dist < best_dist
         best_dist = dist;
         best_idx = i;
     end

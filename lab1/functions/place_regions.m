@@ -1,11 +1,11 @@
-function region_centres = place_regions(centre,radius)
+function region_centres = place_regions(centre, radius)
 % Function Name: place_regions
 %
 % Description: creates 3 x 3 square regions for the descriptor. The function
 %              takes in a 1x2 array `centre` representing the center of the
 %              region pattern, and a scalar `radius` specifying the radius
 %              of each square region. The output is a 2x9 array with columns
-%              being the 2D center points of the 9 regions. Use the provided 
+%              being the 2D center points of the 9 regions. Use the provided
 %              function plot_squares(img, region_centres, region_radius) to
 %              plot your regions in an example image. Increasing the input
 %              radius with a factor K should scale the whole region pattern
@@ -31,16 +31,16 @@ function region_centres = place_regions(centre,radius)
 %
 % See also: plot_squares
 
-region_centres = zeros(2,9);
+region_centres = zeros(2, 9);
 idx = 1;
 for i = -1:1
 
     for j = -1:1
-    
-        x = centre(1) + i*2*radius;
-        y = centre(2) + j*2*radius;
 
-        region_centres(:,idx) = [x;y];
+        x = centre(1) + i * 2 * radius;
+        y = centre(2) + j * 2 * radius;
+
+        region_centres(:, idx) = [x; y];
         idx = idx + 1;
 
     end
@@ -48,4 +48,3 @@ for i = -1:1
 end
 %region_centres = region_centres';
 end
-

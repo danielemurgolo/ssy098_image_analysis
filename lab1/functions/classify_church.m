@@ -10,11 +10,11 @@ points = detectSIFTFeatures(image);
 
 [features, validPoints] = extractFeatures(image, points);
 
-for i=1:n_labels
+for i = 1:n_labels
 
-    desc = feature_collection.descriptors(:, feature_collection.labels==i);
+    desc = feature_collection.descriptors(:, feature_collection.labels == i);
 
-    match_coords = matchFeatures(features,desc', 'MatchThreshold', 100, 'MaxRatio', 0.7);
+    match_coords = matchFeatures(features, desc', 'MatchThreshold', 100, 'MaxRatio', 0.7);
 
     matches_per_label(i) = size(match_coords, 1);
 

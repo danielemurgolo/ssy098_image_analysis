@@ -1,10 +1,10 @@
-function histogram = gradient_histogram(grad_x,grad_y)
+function histogram = gradient_histogram(grad_x, grad_y)
 % Function Name: gradient_histogram
 %
 % Description:  this function places each gradient into one of eight orientation
-%               bins. The function takes in two 1-dimensional arrays of the 
-%               same size, grad_x and grad_y, representing the gradient 
-%               magnitudes in the x and y directions, respectively. 
+%               bins. The function takes in two 1-dimensional arrays of the
+%               same size, grad_x and grad_y, representing the gradient
+%               magnitudes in the x and y directions, respectively.
 %               The provided plot_bouquet lets you plot the histograms as a
 %               bouquet of vectors and might be helpful for debugging.
 %
@@ -13,7 +13,7 @@ function histogram = gradient_histogram(grad_x,grad_y)
 %     - grad_y: a 1-dimensional array representing the gradient magnitudes in the y direction
 %
 % Outputs:
-%     - histogram: a 1-dimensional array representing the histogram of gradient orientations, 
+%     - histogram: a 1-dimensional array representing the histogram of gradient orientations,
 %       with each gradient magnitude placed into one of eight orientation bins
 %
 % Example Usage:
@@ -34,10 +34,10 @@ angles = atan2(grad_y, grad_x);
 
 for n = 1:bins
 
-    low = (n-1)*2*pi / bins - pi ; 
+    low = (n - 1) * 2 * pi / bins - pi;
     high = n * 2 * pi / bins - pi;
 
-    idx = angles>=low & angles < high;
+    idx = angles >= low & angles < high;
 
     gx = grad_x(idx);
     gy = grad_y(idx);
@@ -50,7 +50,7 @@ for n = 1:bins
         gy = 1e-31;
     end
 
-    magnitudes = sqrt(gx.^2 + gy.^2);
+    magnitudes = sqrt(gx.^2+gy.^2);
 
     histogram(n) = sum(magnitudes);
 
@@ -58,4 +58,3 @@ end
 
 
 end
-
