@@ -1,6 +1,26 @@
 function U = minimal_triangulation(Ps, us)
-%the function takes two camera matrices, Ps, and two image points, 
-% us, and triangulates a 3D point
+% Function Name: minimal_triangulation
+%
+% Description: 
+%   This function takes in two camera matrices, Ps, and two image points, 
+%   us, and triangulates a 3D point.
+%
+% Inputs:
+%   Ps - cell array of two 3 x 4 camera matrices
+%   us - 2 x 2 matrix of image points (us(:,1) corresponds to Ps{1}, and
+%        us(:,2) corresponds to Ps{2})
+%
+% Output:
+%   U - 3x1 column vector representing the 3D point
+%
+% Example Usage:
+%     >> Ps = {...} % define camera projection matrices
+%     >> us = [...] % define image points
+%     >> U = minimal_triangulation(Ps, us)
+%     >> disp(U);
+%
+% Author: Daniele Murgolo
+% Date: March 1st, 2023
     x1 = us(1, 1);
     y1 = us(2, 1);
     x2 = us(1, 2);
