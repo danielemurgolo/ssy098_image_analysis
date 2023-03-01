@@ -1,6 +1,23 @@
 function label = classify_church(image, feature_collection)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% Function Name: classify_church
+%
+% Description: This function classifies a new image by computing feature points
+%              for the image, matching them to the features in the feature
+%              collection, and letting each match vote for the correct church.
+%              The output is the label of the most likely church.
+%
+% Inputs:
+%   - image: The new image to be classified
+%   - feature_collection: A structure containing a set of features and descriptors
+%       for each church, as well as the labels for the churches.
+%
+% Outputs:
+%   - label: The label of the most likely church for the new image.
+%
+% Author: Daniele Murgolo
+% Date: March 1st, 2023
+%
+% See also: detectSIFTFeatures, extractFeatures, matchFeatures
 
 n_labels = length(feature_collection.names);
 
