@@ -6,11 +6,11 @@ function [permutedImageData, categoricalLabels] = permute_dataset(data, labels)
 %              Additionally, it converts the input labels to categorical format.
 %
 % Inputs:
-%   - data: matrix of size N x 3072 representing the images in the dataset
+%   - data: matrix of type uint8 of size N x 3072 representing the images in the dataset
 %   - labels: array of length N representing the labels of the images
 %
 % Outputs:
-%   - permutedImageData: matrix of size 32 x 32 x 3 x N
+%   - permutedImageData: matrix of type double of size 32 x 32 x 3 x N 
 %   - categoricalLabels: categorical array of length N
 %
 % Example Usage:
@@ -22,6 +22,6 @@ function [permutedImageData, categoricalLabels] = permute_dataset(data, labels)
 
 N = size(data, 1);
 data = data';
-permutedImageData = reshape(data, [32, 32, 3, N]);
+permutedImageData = im2double(reshape(data, [32, 32, 3, N]));
 categoricalLabels = categorical(labels);
 end
