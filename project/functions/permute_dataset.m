@@ -6,8 +6,8 @@ function [permutedImageData, categoricalLabels] = permute_dataset(data, labels)
 %              Additionally, it converts the input labels to categorical format.
 %
 % Inputs:
-%   - data: matrix of size N x 3072
-%   - labels: array of length N
+%   - data: matrix of size N x 3072 representing the images in the dataset
+%   - labels: array of length N representing the labels of the images
 %
 % Outputs:
 %   - permutedImageData: matrix of size 32 x 32 x 3 x N
