@@ -13,6 +13,10 @@ function [permutedImageData, categoricalLabels] = permute_dataset(data, labels)
 %   - permutedImageData: matrix of size 32 x 32 x 3 x N
 %   - categoricalLabels: categorical array of length N
 %
+% Example Usage:
+%   >> load(data_batch_1.mat);
+%   >> [permutedImageData, categoricalLabels] = permute_dataset(data, labels);
+%
 % Author: Daniele Murgolo
 % Date: March 6th, 2023
 
