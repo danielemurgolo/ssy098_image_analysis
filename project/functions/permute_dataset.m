@@ -10,7 +10,7 @@ function [permutedImageData, categoricalLabels] = permute_dataset(data, labels)
 %   - labels: array of length N representing the labels of the images
 %
 % Outputs:
-%   - permutedImageData: matrix of type double of size 32 x 32 x 3 x N 
+%   - permutedImageData: matrix of type double of size 32 x 32 x 3 x N
 %   - categoricalLabels: categorical array of length N
 %
 % Example Usage:
@@ -21,7 +21,7 @@ function [permutedImageData, categoricalLabels] = permute_dataset(data, labels)
 % Date: March 6th, 2023
 
 N = size(data, 1);
-data = data';
-permutedImageData = im2double(reshape(data, [32, 32, 3, N]));
+data = reshape(data, [N, 32, 32, 3]);
+permutedImageData = im2double(permute(data, [3, 2, 4, 1]));
 categoricalLabels = categorical(labels);
 end
