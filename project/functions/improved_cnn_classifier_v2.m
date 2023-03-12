@@ -25,7 +25,7 @@ maxPooling2dLayer(3, 'Stride', 2);
 convolution2dLayer(filterSize, numFilters, 'Padding', 2);
 reluLayer();
 maxPooling2dLayer(3, 'Stride',2);
-dropoutLayer(0.1);
+dropoutLayer(0.2);
 
 convolution2dLayer(filterSize, 2 * numFilters, 'Padding', 2);
 reluLayer();
