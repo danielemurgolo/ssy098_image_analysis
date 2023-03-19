@@ -1,6 +1,26 @@
 function [XTrain, YTrain, XTest, YTest] = load_data(dataLocation)
-%LOAD_DATA Summary of this function goes here
-%   Detailed explanation goes here
+% Function Name: load_data
+%
+% Description: 
+%   This function loads the CIFAR-10 dataset from the specified
+%   data location, and returns the training and testing sets in the form of
+%   four-dimensional arrays of images and their corresponding categorical labels.
+%
+% Inputs:
+%   - dataLocation: A string containing the path to the CIFAR-10 dataset.
+%
+% Outputs:
+%   - XTrain: A four-dimensional array containing the training images.
+%   - YTrain: A categorical array containing the corresponding training labels.
+%   - XTest: A four-dimensional array containing the testing images.
+%   - YTest: A categorical array containing the corresponding testing labels.
+%
+% Example Usage:
+%   [XTrain, YTrain, XTest, YTest] = load_data('/path/to/cifar-10');
+%
+% Author: Daniele Murgolo
+% Date: March 19th, 2023
+
 location = fullfile(dataLocation, 'cifar-10-batches-mat');
 
 [XTrain1, YTrain1] = loadBatchAsFourDimensionalArray(location, 'data_batch_1.mat');
