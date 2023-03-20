@@ -1,24 +1,22 @@
 # Table of contents
-- [Ex 2.1 ](#Ex-2.1)
-- [Ex 2.2 ](#ex-2.2-)
-- [Ex 2.3](#ex-2.3)
-- [2.2 Training the classifier](#2.2-training-the-classifier)
-- [Ex 2.4](#ex-2.4)
-- [Ex 2.5](#ex-2.5)
-- [Ex 2.6 ](#ex-2.6-)
-- [Exercise 2.7](#exercise-2.7)
-- [Ex 2.8 ](#ex-2.8-)
+- [Ex 2.1 ](#ex-21)
+- [Ex 2.2 ](#ex-22)
+- [Ex 2.3](#ex-23)
+- [Ex 2.4](#ex-24)
+- [Ex 2.5](#ex-25)
+- [Ex 2.6 ](#ex-26)
+- [Ex 2.7](#ex-27)
+- [Ex 2.8 ](#ex-28)
 - [Ex 2.9](#ex-2.9)
-- [2.3 Convolutional neural networks](#2.3-convolutional-neural-networks)
-- [Ex 2.11 ](#ex-2.11-)
-- [Ex 2.12 ](#ex-2.12-)
-- [Ex 2.13 ](#ex-2.13-)
-- [Ex 2.14 ](#ex-2.14-)
-- [Ex 2.15 ](#ex-2.15-)
-- [Ex 2.17](#ex-2.17)
-- [Ex. 2.18](#ex.-2.18)
-- [Ex 2.19 ](#ex-2.19-)
-- [Ex 2.20](#ex-2.20)
+- [Ex 2.11 ](#ex-211)
+- [Ex 2.12 ](#ex-212)
+- [Ex 2.13 ](#ex-213)
+- [Ex 2.14 ](#ex-214)
+- [Ex 2.15 ](#ex-215)
+- [Ex 2.17](#ex-217)
+- [Ex 2.18](#ex-218)
+- [Ex 2.19 ](#ex-219)
+- [Ex 2.20](#ex-220)
 
 
 # Notes regarding lab format
@@ -297,7 +295,7 @@ Epoch 5
 Firstly, we can see that the gradient is changing with the number of epochs, indicating that the gradient is actually updating it. Now, if we consider the initialization of w, which is a random process, we can se that the initial situation of the matrix actually influences the "learning" of the classifier. We can actually see how multiplying the initial w matrix by a scalar, namely s, affects the training. As previously stated the training (the stochastic descent) depends on the gradient and and therefore also the subsequent updating of the weighting matrix.
 
 
-# Exercise 2.7
+# Ex 2.7
 
 
 As said before, at each iteration of stochastic gradient descent, a training example is chosen at random. Check what happens to w after 5 epochs when that training example is not chosen randomly but in sequence, i.e. first `i = 1`, then `i = 2`, and so on. Include on the report a visualization of w for this case. (Don’t forget to change back your function to a random choice of i after this exercise).
@@ -887,7 +885,7 @@ Replace the blue box of the network in the figure above by a sequence of two lay
 As stated above the blue layer has 2510 parametrs, if we substitute it with two 10 3x3 conv layers we are going to have 2*(3*3*10+1)*10 = 1820. This means that we are going to have less parameters and the network would get simplier. Moreover, the weight matrix are going to be considerably smaller meaning that there are going to be less operations carried out. Regarding accuracy, the model it's going to get deeper which is going to improve the overall accuracy of the model.
 
 
-# Ex. 2.18
+# Ex 2.18
 
 
 Make a copy of basic_cnn_classifier.m and name it better_cnn_classifier.m. Try modifying the network by adding more layers. Also experiment with the training options. How much can you improve the results?
