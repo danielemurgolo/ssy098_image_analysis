@@ -13,7 +13,7 @@
 [Here](/lab3/lab3.pdf) you can find the report of Lab3 as a pdf.
 
 ## Lab4
-[Here](/lab2/README.md) you can find the report of Lab4.
+[Here](/lab4/README.md) you can find the report of Lab4.
 [Here](/lab4/lab4.pdf) you can find the report of Lab4 as a pdf.
 
 ## Project
