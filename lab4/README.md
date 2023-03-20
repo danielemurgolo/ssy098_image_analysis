@@ -53,7 +53,7 @@ This whole lab is basically concerned with the camera equation
 
 
 $$
-\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\lambda u=P\;U
+\lambda u=P\,U
 $$
 
 
@@ -62,7 +62,7 @@ For the uncalibrated case, $u$ is a 3-vector with the coordinates of a point in 
 
 
 $$
-\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;u=\left\lbrack \begin{array}{c}
+u=\left\lbrack \begin{array}{c}
 x\\
 y\\
 1
