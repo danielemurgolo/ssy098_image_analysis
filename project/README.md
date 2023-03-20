@@ -1297,7 +1297,7 @@ xline(threshold,"r-",join(["Threshold" threshold]))
 ```
 
 
-![figure_25.png](project_images/figure_25.eps)
+![figure_25.png](project_images/figure_25.png)
 
 
 ```matlab:Code
