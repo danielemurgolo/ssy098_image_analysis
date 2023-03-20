@@ -17,4 +17,4 @@
 [Here](/lab4/lab4.pdf) you can find the report of Lab4 as a pdf.
 
 ## Project
-[Here](/project/Image_Analysis_Project.pdf) you can find the final report of the prject. You can also find the [pdf](/project/project.pdf) and [html](/project/project.pdf) files of the project. Finally, you can also find the [pdf](/project/advanced_part.pdf) and [html](/project/advanced_part.pdf) files of the advanced part.
+[Here](/project/Image_Analysis_Project.pdf) you can find the final report of the prject. You can also find the [pdf](/project/project.pdf) and [html](https://htmlpreview.github.io/?https://github.com/danielemurgolo/ssy098_image_analysis/blob/main/project/project.hmtl) files of the project. Finally, you can also find the [pdf](/project/advanced_part.pdf) and [html](https://htmlpreview.github.io/?https://github.com/danielemurgolo/ssy098_image_analysis/blob/main/project/advanced_part.html) files of the advanced part.
