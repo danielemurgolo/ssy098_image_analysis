@@ -31,7 +31,7 @@ addpath('./data');
 In this lab you will implement a SIFT-like descriptor and try it on some classification tasks. Keep your code well commented, both for your own sake and because it is required.
 
 
-# Ex 1.1** **
+# Ex 1.1
 
 
 Make a function
