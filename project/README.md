@@ -1297,7 +1297,7 @@ xline(threshold,"r-",join(["Threshold" threshold]))
 ```
 
 
-![figure_25.eps](project_images/figure_25.eps)
+![figure_25.png](project_images/figure_25.eps)
 
 
 ```matlab:Code
@@ -1333,7 +1333,7 @@ title("id")
 ```
 
 
-![figure_26.eps](project_images/figure_26.eps)
+![figure_26.eps](project_images/figure_26.png)
 
 ## Empirical Study
 
@@ -1361,7 +1361,7 @@ xline(threshold,"r-",join(["Threshold" threshold]))
 ```
 
 
-![figure_27.eps](project_images/figure_27.eps)
+![figure_27.eps](project_images/figure_27.png)
 
 
 ```matlab:Code
@@ -1412,7 +1412,7 @@ sgtitle("Wrongly classified ood images")
 ```
 
 
-![figure_28.eps](project_images/figure_28.eps)
+![figure_28.eps](project_images/figure_28.png)
 
 
 ```matlab:Code
