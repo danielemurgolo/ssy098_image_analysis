@@ -17,6 +17,6 @@
 [Here](/lab4/lab4.pdf) you can find the report of Lab4 as a pdf.
 
 ## Project
-[Here](/project/Image_Analysis_Project.pdf) you can find the final report of the prject. You can also find the complete [live editor](/project/README.md) of the code.
+[Here](/project/Image_Analysis_Project.pdf) you can find the final report of the project. You can also find the complete [live editor](/project/README.md) of the code.
 
 [^1]:The markdown files were created using this [repository](https://github.com/minoue-xx/livescript2markdown) by [minoue_xx](https://github.com/minoue-xx)
