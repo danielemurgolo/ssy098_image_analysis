@@ -1,3 +1,19 @@
+# Table of contents
+- [Ex 1.1](#ex-11)
+- [Ex 1.2 ](#ex-12)
+- [Ex 1.3](#ex-13)
+- [Ex 1.4](#ex-14)
+- [Ex 1.5](#ex-15)
+- [Ex 1.6](#ex-16)
+- [Ex 1.7 ](#ex-17)
+- [Ex 1.8](#ex-18)
+- [Ex 1.9 ](#ex-19)
+- [Ex 1.12](#ex-112)
+- [Ex 1.13](#ex-113)
+- [Ex 1.14 ](#ex-114)
+- [Ex 1.15](#ex-115)
+
+
 # Notes regarding lab format
 
 
