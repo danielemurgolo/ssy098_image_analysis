@@ -1,6 +1,5 @@
 # Table of contents
-- [Load the data using](#load-the-data-using)
-- [Ex 2.1 ](#ex-2.1-)
+- [Ex 2.1 ](#Ex 2.1)
 - [Ex 2.2 ](#ex-2.2-)
 - [Ex 2.3](#ex-2.3)
 - [2.2 Training the classifier](#2.2-training-the-classifier)
