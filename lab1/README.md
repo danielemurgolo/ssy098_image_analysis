@@ -8,6 +8,8 @@
 - [Ex 1.7 ](#ex-17)
 - [Ex 1.8](#ex-18)
 - [Ex 1.9 ](#ex-19)
+- [Ex 1.10 ](#ex-110)
+- [Ex 1.11 ](#ex-111)
 - [Ex 1.12](#ex-112)
 - [Ex 1.13](#ex-113)
 - [Ex 1.14 ](#ex-114)
@@ -357,7 +359,7 @@ load digits.mat
 The examples are stored in a struct array. To get image number 12 you write **digits_training(12).image **and to get its label you write **digits_training(12).label **.
 
 
-# `Ex 1.10`
+# Ex 1.10
 
 
 Make a script **prepare_digits.m** that computes a descriptor for each digit in **digits_training**. You need to choose the position and radius parameters so that all the descriptor regions fit into the images. Store the descriptors in an appropriate place. A suggestion is to store the 12th descriptor in **digits_training(12).descriptor**.
@@ -381,7 +383,7 @@ ans =
 
 
 
-**Ex 1.11**
+# Ex 1.11
 
 
 

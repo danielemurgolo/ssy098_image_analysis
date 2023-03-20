@@ -1,6 +1,19 @@
 # Table of contents
-- [Least squares triangulation ](#least-squares-triangulation-)
-- [Your answer here:](#your-answer-here:)
+- [Ex 4.1](#ex-41)
+- [Ex 4.2 ](#ex-42)
+- [Ex 4.3](#ex-43)
+- [Ex 4.4](#ex-44)
+- [Ex 4.5](#ex-45)
+- [Ex 4.6](#ex-46)
+- [Ex 4.7 ](#ex-47)
+- [Ex 4.8](#ex-48)
+- [Ex 4.9 ](#ex-49)
+- [Ex 4.10](#ex-410)
+- [Ex 4.11](#ex-411)
+- [Ex 4.12](#ex-412)
+- [Ex 4.13](#ex-413)
+- [Ex 4.14 ](#ex-414)
+- [Ex 4.15](#ex-415)
 
 
 # Notes regarding lab format
