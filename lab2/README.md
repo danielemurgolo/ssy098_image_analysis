@@ -60,7 +60,7 @@ The output from our classifier is a probability p for the input patch being cent
 
 
 $$
-p=\frac{e^y }{1+e^y }\;\;\;\;\textrm{where}\;\;\;\;y=I\cdot \omega +\omega_0
+p=\frac{e^y }{1+e^y } \textrm{ where } y=I\cdot \omega +\omega_0
 $$
 
 
