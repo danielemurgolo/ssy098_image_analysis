@@ -41,7 +41,7 @@ If you find any issues or bugs in the code, please feel free to submit a pull re
 
 ## Credits
 
-The labs and final project were developed by [@danielemurgolo](https://github.com/danielemurgolo/) for the Image Analysis course at [Chalmers University of Technology](https://www.chalmers.se/). The code and resources in this repository are based on various open source projects, including:
+The labs and final project were completed by [@danielemurgolo](https://github.com/danielemurgolo/) for the Image Analysis course at [Chalmers University of Technology](https://www.chalmers.se/). The code and resources in this repository are based on various open source projects, including:
 
 - [MATLAB](https://www.mathworks.com/products/matlab.html)
 - [Image Processing Toolbox](https://www.mathworks.com/products/image.html)
