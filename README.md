@@ -1,4 +1,4 @@
-# SSY098 Image Analysis[^1]
+# SSY098 Image Analysis
 
 This repository contains the labs and project for the Image Analysis course.
 
@@ -15,14 +15,44 @@ Image registration is the process of aligning two or more images of the same sce
 ### [Lab 4: Triangulation](./labs/lab4) 
 Triangulation is the process of estimating the position of a point in 3D space based on its projection onto two or more 2D images. This lab covers the triangulation algorithm used in computer vision.
 
-Each lab includes a MATLAB Live Script and a PDF export of the Live Script.
+## [Project: CIFAR-10 Image Classification](./project)
 
-## Project
+The project is on Image Classification of the CIFAR-10 dataset using Convolutional Neural Networks (CNN).
 
-The project is on Image Classification of the CIFAR-10 dataset using Convolutional Neural Networks (CNN). You can find the project in the [project](./project) directory.
+## Getting Started
+
+To get started with the course, you will need to install MATLAB on your machine. You will also need to download and install the following MATLAB toolboxes:
+
+- Image Processing Toolbox
+- Computer Vision Toolbox
+- Deep Learning Toolbox
+
+You can download these toolboxes from the MathWorks website.
+
+## Usage
+
+Each lab is accompanied by a MATLAB script that contains the code and instructions for that lab. To start a lab, simply open the corresponding script and follow the instructions.
+
+The final project is also accompanied by a MATLAB script that contains the code and instructions for building a CNN to classify images from the CIFAR10 dataset.
+
+## Contributing
+
+If you find any issues or bugs in the code, please feel free to submit a pull request or create an issue. Contributions are always welcome!
+
+## Credits
+
+The labs and final project were developed by [@danielemurgolo](https://github.com/danielemurgolo/) for the Image Analysis course at [Chalmers University of Technology](https://www.chalmers.se/). The code and resources in this repository are based on various open source projects, including:
+
+- [MATLAB](https://www.mathworks.com/products/matlab.html)
+- [Image Processing Toolbox](https://www.mathworks.com/products/image.html)
+- [Computer Vision Toolbox](https://www.mathworks.com/products/computer-vision.html)
+- [Deep Learning Toolbox](https://www.mathworks.com/products/deep-learning.html)
+- [Livescript to Markdown](https://github.com/minoue-xx/livescript2markdown)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [`LICENSE`](./LICENSE) file for details.
 
-[^1]:The markdown files were created using this [repository](https://github.com/minoue-xx/livescript2markdown) by [minoue_xx](https://github.com/minoue-xx)
+## Contact
+
+If you have any questions about the course, feel free to contact me at [Daniele Murgolo](mailto:daniele.murgolo29@gmail.com?subject=[GitHub]%20Image%20Analysis%20SSY098).
